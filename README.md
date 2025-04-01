@@ -13,9 +13,17 @@ It has 2 portions;
 2. Emphasis on language of design
 
 # Models
-Models are central to DDD, but the word ‘model’ means many things, so we need to be specific. The sense of the word we apply in DDD is a basic and old one, not specifically tied to software: We simply say a model is a system of abstractions. It is a set of concepts that we can use to reason about a domain. It is a distillation of our knowledge about a specific domain - addresses a subset of information about the domain. It excludes information that is not particurly relevant to the problem at hand - allows us to focus on and simplify the problem. Models are specialized, not general - specific solution to a specific type of problems. Models are artifical - they evolve.
+Models are central to DDD, but the word ‘model’ means many things, so we need to be specific. The sense of the word we apply in DDD is a basic and old one, not specifically tied to software: We simply say a model is a system of abstractions. It is a set of concepts that we can use to reason about a domain. It is a distillation of our knowledge about a specific domain - addresses a subset of information about the domain. It excludes information that is not particurly relevant to the problem at hand - allows us to focus on and simplify the problem. Models are specialized, not general - specific solution to a specific type of problems. Models are artifical. Models evolve.
+
+During modeling sessions, try to come up with multiple ideas. If all the ideas are good, may be you are not doing it right.
    
 # What is Domain Driven Design?
+DDD tries to combine following 2 ideas;
+1. Technical Design perspective
+2. The langauge and collaboration perspective - this is about collaborating / engaging with a domain expert, without bringing in technical jargons into the discussion, and developing a model that a developer and domain expert both can reason about, without compromising on software design practices.
+
+It is a tool for us to talk to business folks about the design in a language that business folks can understand.
+
 According to Eric Evans, a domain model is not a particular diagram; it is the idea that the diagram is intended to convey. It is not just the knowledge in a domain expert’s head; it is a rigorously organized and selective abstraction of that knowledge. A diagram can represent and communicate a model, as can carefully written code, as can an English sentence.
 
 In short, DDD is primarily about modeling a <i>Ubiquitous Language</i> in an explicitly <i>Bounded Context</i>.
