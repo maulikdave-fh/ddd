@@ -11,6 +11,9 @@ It has 2 portions;
 ## Tactaical Design
 1. Collaborative exploration of models
 2. Emphasis on language of design
+
+# Models
+Models are central to DDD, but the word ‘model’ means many things, so we need to be specific. The sense of the word we apply in DDD is a basic and old one, not specifically tied to software: We simply say a model is a system of abstractions. It is a set of concepts that we can use to reason about a domain. It is a distillation of our knowledge about a specific domain - addresses a subset of information about the domain. It excludes information that is not particurly relevant to the problem at hand - allows us to focus on and simplify the problem. Models are specialized, not general - specific solution to a specific type of problems. Models are artifical - they evolve.
    
 # What is Domain Driven Design?
 According to Eric Evans, a domain model is not a particular diagram; it is the idea that the diagram is intended to convey. It is not just the knowledge in a domain expert’s head; it is a rigorously organized and selective abstraction of that knowledge. A diagram can represent and communicate a model, as can carefully written code, as can an English sentence.
