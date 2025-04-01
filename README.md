@@ -1,3 +1,17 @@
+# What DDD is for?
+1. Complex domains
+2. Difficult communication between domain experts and technical people
+3. Muddled concepts
+
+It has 2 portions;
+## Strategic Design
+1. Establish boundaries, isolating different designs
+2. Focus design efforts on most valuable parts
+
+## Tactaical Design
+1. Collaborative exploration of models
+2. Emphasis on language of design
+   
 # What is Domain Driven Design?
 According to Eric Evans, a domain model is not a particular diagram; it is the idea that the diagram is intended to convey. It is not just the knowledge in a domain expert’s head; it is a rigorously organized and selective abstraction of that knowledge. A diagram can represent and communicate a model, as can carefully written code, as can an English sentence.
 
