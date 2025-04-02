@@ -13,9 +13,15 @@ It has 2 portions;
 2. Emphasis on language of design
 
 # Models
+<s>UML Class Diagrams</s><br>
+<s>A Layer of Software</s>
+
+## Definition of Model
+Domain is a Sphere of knowledge or activity. A model is a system of abstractions representing selected aspects of a domain. The goal of the modelling is to traverse through a complex domain and represent the domain in abstract and simpler (understandable) form.
+
 Models are central to DDD, but the word ‘model’ means many things, so we need to be specific. The sense of the word we apply in DDD is a basic and old one, not specifically tied to software: We simply say a model is a system of abstractions. It is a set of concepts that we can use to reason about a domain. It is a distillation of our knowledge about a specific domain - addresses a subset of information about the domain. It excludes information that is not particurly relevant to the problem at hand - allows us to focus on and simplify the problem. Models are specialized, not general - specific solution to a specific type of problems. Models are artifical. Models evolve.
 
-During modeling sessions, try to come up with multiple ideas. If all the ideas are good, may be you are not doing it right.
+During modeling sessions, try to come up with multiple ideas. If all the ideas are good, may be you are not doing it right. Choose a model that's suited to the purpose at hand.
    
 # What is Domain Driven Design?
 DDD tries to combine following 2 ideas;
@@ -29,6 +35,10 @@ According to Eric Evans, a domain model is not a particular diagram; it is the i
 In short, DDD is primarily about modeling a <i>Ubiquitous Language</i> in an explicitly <i>Bounded Context</i>.
 
 ## Ubiquitous Language
+A language structured around the domain model and used by all team members to connect all the activities of the team with the software. It is specific to a project / subsystem that we are working on. Outside of the subsystem, for another subsystem, there may be a different langauge. I.e.; the langauge is contextual.
+
+Ubiquitous language is used within a bounded context.
+
 Domain Experts, is not a job title but rather describes those who are primarily focused on the business. It’s their mental model that we start with to form the
 foundation of the team’s Ubiquitous Language. Both developers and Domain Experts should reject any tendency to allow documents to rule over conversation. The best Ubiquitous Language will be developed by a collaborative feedback loop that drives out the combined mental model of the team. Open conversation, exploration, and
 challenges to your current knowledge base result in deeper insights about the Core Domain.
