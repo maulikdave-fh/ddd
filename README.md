@@ -108,15 +108,25 @@ Another way to think of a Subdomain is that it is a clear area of expertise, ass
 ## Types of Subdomains
 ### Core Domain
 This is where you are making a strategic investment in a single, well-defined domain model, committing significant resources for carefully crafting your Ubiquitous
-Language in an explicit Bounded Context. This is very high on your organization’s list of projects because it will distinguish it from all competitors. Since your organization can’t be distinguished in everything that it does, your Core Domain demarcates where it must excel. Achieving the level of deep learning and understanding required to make such a determination requires commitment, collaboration, and experimentation. It’s where the organization needs to invest most liberally in software.
+Language in an explicit Bounded Context. This is very high on your organization’s list of projects because it will distinguish it from all competitors. Since your organization can’t be distinguished in everything that it does, your Core Domain demarcates where it must excel. Achieving the level of deep learning and understanding required to make such a determination requires commitment, collaboration, and experimentation. It’s where the organization needs to invest most liberally in software. 
+1. Understand the core domain deeply. Creative Collaboration - domain experts and software practitioners. Ask why.
+2. Go for the best model. Explore and iterate. 
+3. Isolate the work in a clean, bounded context.Use Ubiquitious language
+4. Assign your best designers - who are good at abstractions, good at design & good at collaborating with non-technical people.
 
-### Supporting Subdomain
+Here is where you thorougly apply tactical level of DDD. 
+
+### Supporting Subdomains
 This is a modeling situation that calls for custom development, because an off-the-shelf solution doesn’t exist. However, you will still not make the kind of
 investment that you have made for your Core Domain. You may want to consider outsourcing this kind of Bounded Context to avoid mistaking it for something strategically distinguishing, and thus investing heavily in it. This is still an important software model, because your Core Domain cannot be successful without it.
 
-### Generic Subdomain
+Possible can be outsourced, or can use your B string team to build it.
+
+### Generic Subdomains
 This kind of solution may be available for purchase off the shelf but may also be outsourced or even developed in house by a team that doesn’t have the kind of elite
-developers that you assign to your Core Domain or even a lesser Supporting Subdomain. 
+developers that you assign to your Core Domain or even a lesser Supporting Subdomain.
+
+The biggest cost of building generic subdomains in-house is the opportunity cost. Why tie-up your resources in building something that you can buy off-the-shelf?
 
 # Strategic Design
 ## Context Mapping
@@ -205,6 +215,15 @@ Seek low coupling in the sense of concepts that can be understood and reasoned a
 Give the Modules names that become part of the Ubiquitous Language. Modules and their names should reflect insight into the domain.
 
 ## Aggregate
+Aggregates deal with following aspects;
+### Transaction / Consistency boundaries
+#### Aggregates are always internally consistent
+invariants apply at every transaction commit
+#### Agrregates are "eventually consistent" with each other
+asynchronous udpates propogate through system. How long the system will take to achieve the eventual consistency should be captured in SLA - business people should be involed to understand business concequences of any delays. For example; 90th percential of the updates will be reflected in less than 100 seconds.
+### Distribution boundaries
+### Concurrency boundaries
+
 Each Aggregate is composed of one or more Entities, where one Entity is called the Aggregate Root. The Root Entity of each Aggregate owns all the other elements clustered inside it. The name of the Root Entity is the Aggregate ’s conceptual name. You should choose a name that properly describes the conceptual whole that the Aggregate models.
 
 Each Aggregate forms a transactional consistency boundary. This means that within a single Aggregate , all composed parts must be consistent, according to business rules, when the controlling transaction is committed to the database. This doesn’t necessarily mean that you are not supposed to compose other elements within an Aggregate that don’t need to be consistent after a transaction. After all, an Aggregate also models a conceptual whole. But you should be first and foremost concerned with transactional consistency.
