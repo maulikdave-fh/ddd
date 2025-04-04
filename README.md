@@ -1,3 +1,24 @@
+# Domain
+A sphere of knowledge, influence, or activity - A field | industry in which the business operate - For example; Banking, Oil & Gas, Retail, etc.
+1. Made up of mulitple sub-domains. For example; Banking domain has Loans Accounts, Retail Accounts and Merchant Accounts
+2. Typically, SME / domain expert is aligned with a sub-domain - No one expert knows everything about the domain.
+
+# Conceptual Models, Architecture & Design
+## Conceptual Model - A set of concepts and their relationships
+1. Enhance the understanding of the designers
+2. Conveying the ideas to stakeholders
+3. Provide a point of reference to create details specs
+4. Documentation for future reference
+
+## Architectural Model
+A structured representation of the solution - No implementation details, High level
+
+## Design
+A structured representation of a solution that is closer to the implementation. For example; it captures technologies to be used for a specific problem
+
+# Modelling Techniques and Architectural Styles
+
+
 # What DDD is for?
 1. Complex domains
 2. Difficult communication between domain experts and technical people
