@@ -16,9 +16,6 @@ A structured representation of the solution - No implementation details, High le
 ## Design
 A structured representation of a solution that is closer to the implementation. For example; it captures technologies to be used for a specific problem
 
-# Modelling Techniques and Architectural Styles
-
-
 # What DDD is for?
 1. Complex domains
 2. Difficult communication between domain experts and technical people
